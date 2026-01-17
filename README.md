@@ -15,7 +15,7 @@ Puis :
 ```bash
 hatch -vv run cli
 ```
-⚠️ Cette commande peut prendre beaucoup de temps la première fois, il faut être patient.
+⚠️ Cette commande peut prendre beaucoup de temps la première fois, il faut être patient. Le flag `-vv` demande à `hatch` d'être "verbeux" et donc de logger ce qu'il fait, on pourra s'en dispenser pour les prochains appels.
 
 ---
 
