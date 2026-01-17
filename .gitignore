@@ -1,0 +1,90 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# =========================
+# Build / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Hatch
+.hatch/
+.hatchery/
+
+# =========================
+# Testing / coverage
+# =========================
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# IDE / Editors
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# Dash / Web
+# =========================
+assets/.cache/
+.cache/
+
+# =========================
+# Data / runtime files
+# =========================
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# =========================
+# Jupyter (optional)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Secrets / local config
+# =========================
+.env
+.env.*
+local_settings.py
+
+# =========================
+# Misc
+# =========================
+*.pid
+*.out

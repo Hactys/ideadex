@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ideadex"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Hactys" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = []
+
+[project.scripts]
+cli = "ideadex.app.cli:main"
+app = "ideadex.app.dash_app:main"
+
+[project.urls]
+Documentation = "https://github.com/Hactys/ideadex#readme"
+Issues = "https://github.com/Hactys/ideadex/issues"
+Source = "https://github.com/Hactys/ideadex"
+
+[tool.hatch.version]
+source = "vcs"
+path = "src/ideadex/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/ideadex tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ideadex", "tests"]
+branch = true
+parallel = true
+omit = []
+
+[tool.coverage.paths]
+ideadex = ["src/ideadex", "*/ideadex/src/ideadex"]
+tests = ["tests", "*/ideadex/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
