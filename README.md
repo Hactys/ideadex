@@ -1,6 +1,6 @@
 
 # IdeaDex 🧠✨
-_Le Tinder de l’innovation pour faciliter l’idéation et le brainstorming_
+_Le Pokédex de l’innovation pour faciliter l’idéation et le brainstorming_
 
 ---
 
