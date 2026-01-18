@@ -4,5 +4,11 @@
     "title": "Béton imprimé 3D",
     "description": "Construction automatisée de bâtiments",
     "themes": ["construction", "robotique"]
+  },
+  {
+    "id": 2,
+    "title": "Four micro-onde",
+    "description": "Réchauffer des plats facilement",
+    "themes": ["cuisine", "pause café"]
   }
 ]
