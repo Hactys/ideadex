@@ -35,7 +35,6 @@ hatch -vv run cli
 ## 🧩 Vision MVP (Minimum Viable Product)
 
 Le MVP doit permettre :
-
 1. Charger des cartes depuis un fichier
 2. Afficher une carte à l’utilisateur
 3. Permettre une interaction simple (like / oppose / passer)
@@ -207,7 +206,6 @@ Au minimum :
 ## 🏁 Critère de réussite du MVP
 
 Le MVP est considéré comme **réussi** si :
-
 * l’utilisateur peut parcourir plusieurs cartes,
 * interagir avec elles,
 * et que ces interactions sont enregistrées,
