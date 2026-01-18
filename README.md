@@ -100,7 +100,6 @@ Thèmes : construction, robotique
 ### 3.1 Actions possibles
 
 Sur chaque carte, l’utilisateur peut :
-
 * 👍 Like : l’idée lui semble intéressante
 * 👎 Opposer : l’idée lui semble peu pertinente
 * ⏭️ Passer : aucune action enregistrée
@@ -108,7 +107,6 @@ Sur chaque carte, l’utilisateur peut :
 ### 3.2 Validation des entrées
 
 * Le programme doit :
-
   * refuser les entrées invalides
   * redemander une action si nécessaire
 
@@ -119,13 +117,11 @@ Sur chaque carte, l’utilisateur peut :
 ### 4.1 Types de relations
 
 Chaque interaction crée une **relation** :
-
 * `like`
 * `oppose`
 * `link` (réservé aux évolutions futures)
 
 Une relation relie :
-
 * une carte source
 * une carte cible
 * un type de relation
@@ -133,7 +129,6 @@ Une relation relie :
 ### 4.2 Stockage des relations
 
 * Les relations sont stockées :
-
   * en mémoire (MVP)
   * ou dans un fichier JSON simple
   * plus tard dans une table SQL
@@ -157,7 +152,6 @@ Une relation relie :
 ## 6️⃣ Boucle principale de l’application
 
 Le programme suit le cycle suivant :
-
 1. Charger les cartes
 2. Afficher une carte
 3. Demander une action
@@ -172,7 +166,6 @@ Le programme suit le cycle suivant :
 ### 7.1 Tests attendus
 
 Au minimum :
-
 * création d’une carte valide
 * création d’une relation valide
 * chargement des cartes depuis un fichier
