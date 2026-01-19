@@ -24,4 +24,13 @@ def load_cards() -> list[Card]:
 
 
 def save_relation(relation: Relation) -> None:
-    ...
+    relation_to_save = {
+        "from_card": relation.from_card,
+        "to_card": relation.to_card,
+        "kind": relation.kind,
+    }
+    with open("relations.json", "r") as file:
+        data = json.load(file)
+    data.append(relation_to_save)
+    with open("relations.json", "w") as file:
+        json.dump(data, file)
