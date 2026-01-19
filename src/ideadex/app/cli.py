@@ -37,7 +37,7 @@ def ask_user_action() -> str:
             print("Entrée invalide, veuillez réessayer.")
 
 
-def main(cards: List[Card]) -> None:
+def run_cli(cards: List[Card]) -> None:
     """
     Boucle principale de la CLI.
     """
@@ -62,6 +62,10 @@ def main(cards: List[Card]) -> None:
     return
 
 
-if __name__ == "__main__":
+def main():
     cards = load_cards()
-    main(cards)
+    run_cli(cards)
+
+
+if __name__ == "__main__":
+    main()
