@@ -22,7 +22,7 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
 ]
-dependencies = []
+dependencies = ["dash", "dash-bootstrap-components"]
 
 [project.scripts]
 cli = "ideadex.app.cli:main"
