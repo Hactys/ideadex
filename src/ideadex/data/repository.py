@@ -8,6 +8,7 @@ from ideadex.domain import Card, Relation
 
 
 def load_cards() -> list[Card]:
+    """Lit le document json pour avoir une liste de carte exploitable"""
     with open("cards.json", "r") as file:
         data = json.load(file)
     liste = []
@@ -24,13 +25,18 @@ def load_cards() -> list[Card]:
 
 
 def save_relation(relation: Relation) -> None:
+    """Enregistre dans un fichier json les relations entre les cartes"""
     relation_to_save = {
         "from_card": relation.from_card,
         "to_card": relation.to_card,
         "kind": relation.kind,
     }
-    with open("relations.json", "r") as file:
-        data = json.load(file)
-    data.append(relation_to_save)
+    try:
+        with open("relations.json", "r") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        data = []
+    if relation_to_save not in data:
+        data.append(relation_to_save)
     with open("relations.json", "w") as file:
         json.dump(data, file)
